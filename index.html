@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="assets/favicon.ico" rel="shortcut icon"/>
+    <script src="https://kit.fontawesome.com/a078cf2775.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owfont-regular.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="./main.js" defer></script>
+    <title>Momentum</title>
+</head>
+<body>
+<header class="header">
+    <!-- player -->
+    <div class="player">
+        <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+        </div>
+        <ul class="play-list"></ul>
+    </div>
+    <!-- settings window -->
+    <div class="settings animate__backInLeft">
+        <div class="top-block">
+            <p class="settings-title">Settings</p>
+            <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+        <div class="language-block">
+            <p class="language-title">Language:</p>
+            <p class="language lang-active" id="en">EN</p>
+            <p class="language" id="ru">RU</p>
+        </div>
+        <form action="#" class="form">
+            <legend class="show">Show blocks:</legend>
+            <label for="player">
+                <input id="player" type="checkbox" name="player" checked>
+                <span id="player-checkbox">Player</span>
+            </label>
+            <label for="weather">
+                <input id="weather" type="checkbox" name="weather" checked>
+                <span id="weather-checkbox">Weather</span>
+            </label>
+            <label for="time">
+                <input id="time" type="checkbox" name="time" checked>
+                <span id="time-checkbox">Time</span>
+            </label>
+            <label for="date">
+                <input id="date" type="checkbox" name="date" checked>
+                <span id="date-checkbox">Date</span>
+            </label>
+            <label for="greeting">
+                <input id="greeting" type="checkbox" name="greeting" checked>
+                <span id="g-checkbox">Greeting</span>
+            </label>
+            <label for="quote">
+                <input id="quote" type="checkbox" name="quote" checked>
+                <span id="quote-checkbox">Quote</span>
+            </label>
+            <label for="copyright">
+                <input id="copyright" type="checkbox" name="copyright" checked>
+                <span id="copyright-checkbox">Copyright</span>
+            </label>
+            <label for="todo">
+                <input id="todo" type="checkbox" name="todo" checked>
+                ToDo
+            </label>
+        </form>
+    </div>
+    <div class="block1">
+        <!-- Settings icons -->
+        <div class="set">
+            <i class="fa-solid fa-gear" id="config"></i>
+            <i class="fa-solid fa-list-check" id="todo-icon"></i>
+        </div>
+        <!-- weather -->
+        <div class="weather">
+            <input type="text" class="city" placeholder="Еnter the name of the city" value="">
+            <i class="weather-icon owf"></i>
+            <div class="weather-error"></div>
+            <div class="description-container">
+                <span class="temperature weather-info"></span>
+                <span class="feels-like weather-info"></span>
+                <span class="weather-description weather-info"></span>
+            </div>
+            <div class="wind weather-info"></div>
+            <div class="humidity weather-info"></div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <!-- slider -->
+    <div class="slider-icons">
+        <div class="slide-prev slider-icon"></div>
+        <div class="slide-next slider-icon"></div>
+    </div>
+    <!-- time -->
+    <time class="time"></time>
+    <!-- date -->
+    <div class="date"></div>
+    <!-- greeting -->
+    <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name" placeholder="[Enter your name]" value="">
+    </div>
+</main>
+<!-- To-Do list -->
+<div class="todo animate__backInUp">
+    <div class="top-block">
+        <p class="todo-title">to do list</p>
+        <i class="fa-solid fa-xmark" id="todo-close"></i>
+    </div>
+    <div class="do"></div>
+    <div class="task">
+        <input class="event" type="text" placeholder="Task to be done ..." value="">
+        <p class="add">Add</p>
+    </div>
+</div>
+<!-- quote -->
+<footer class="quote-block">
+    <div class="quote-field">
+        <div class="change-quote"></div>
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+    <div class="copyright">
+        <a href="https://github.com/vitek2711" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <div class="copyright-text">2022 &copy; developed by ViteK2711</div>
+        <a href="https://rs.school/js-stage0">
+            <img class="rss" src="./assets/svg/rs_school_js.svg" alt="school">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
